@@ -1,5 +1,5 @@
 # Go Blockchain Monitoring Application
-
+![Monitoring Image](https://github.com/GentlemenValidators/initia-simple-monitoring/blob/main/gv2.png)
 This is a Go application that monitors the block height difference between a node and a set of RPC endpoints. Alerts are sent to a Telegram bot when certain thresholds are exceeded.
 
 ## Prerequisites
