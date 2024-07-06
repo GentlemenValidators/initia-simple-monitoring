@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - RPC_URLS=http://rpc1,http://rpc2
+      - NODE_URL=http://node
+      - LEVEL_1=5
+      - LEVEL_2=10
+      - LEVEL_3=15
+      - BOT_TOKEN=your_telegram_bot_token
+      - CHAT_ID=your_telegram_chat_id
+    volumes:
+      - ./previous_state.yml:/root/previous_state.yml
+    restart: unless-stopped
